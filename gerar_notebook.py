@@ -36,7 +36,7 @@ def code(content):
 
 # ─────────────────────────────────────────────────────────────────────────────
 
-md("""# 🔍 Template EDA Profissional
+md("""# Template EDA Profissional
 **Autor:** Miguel Salles Reis · [github.com/miguelsalles-dtscience](https://github.com/miguelsalles-dtscience)
 
 > Template de Análise Exploratória de Dados com rigor estatístico, limpeza automática, testes de hipótese e relatório HTML exportável.
@@ -60,7 +60,7 @@ md("""# 🔍 Template EDA Profissional
 """)
 
 # ─────────────────────────────────────────────────────────────────────────────
-md("## ⚙️ Seção 0 — Configuração")
+md("## Seção 0 — Configuração")
 
 code("""
 # ══════════════════════════════════════════════════════════════════════════════
@@ -157,7 +157,7 @@ print(f"   Output directory: {OUTPUT_DIR.resolve()}")
 """)
 
 # ─────────────────────────────────────────────────────────────────────────────
-md("## 📂 Seção 1 — Carregamento e Diagnóstico Inicial")
+md("## Seção 1 — Carregamento e Diagnóstico Inicial")
 
 code("""
 # ══════════════════════════════════════════════════════════════════════════════
@@ -262,7 +262,7 @@ df.head()
 """)
 
 # ─────────────────────────────────────────────────────────────────────────────
-md("## 🏆 Seção 2 — Data Quality Score")
+md("## Seção 2 — Data Quality Score")
 md("""> **Diferencial:** Em vez de só listar problemas, calculamos uma **nota objetiva de qualidade** para o dataset — algo que clientes e recrutadores nunca viram num template comum.""")
 
 code("""
@@ -531,7 +531,7 @@ print(f"  DQ Score:     {dq['score_total']} → {dq_depois['score_total']} ({del
 """)
 
 # ─────────────────────────────────────────────────────────────────────────────
-md("## 📊 Seção 4 — EDA Univariada")
+md("## Seção 4 — EDA Univariada")
 
 code("""
 # ══════════════════════════════════════════════════════════════════════════════
@@ -728,7 +728,7 @@ else:
 """)
 
 # ─────────────────────────────────────────────────────────────────────────────
-md("## 🧪 Seção 6 — Testes de Hipótese")
+md("## Seção 6 — Testes de Hipótese")
 md("""> **Diferencial:** Testamos automaticamente normalidade e comparamos grupos com os testes estatísticos corretos para cada situação.""")
 
 code("""
@@ -811,7 +811,7 @@ if len(cols_cat) > 0 and len(cols_num) > 0:
 """)
 
 # ─────────────────────────────────────────────────────────────────────────────
-md("## 🎯 Seção 7 — Detecção de Outliers (3 Métodos)")
+md("## Seção 7 — Detecção de Outliers (3 Métodos)")
 md("""> **Diferencial:** Comparamos três métodos com consenso — um ponto só é considerado outlier se **pelo menos 2 métodos** concordam.""")
 
 code("""
@@ -915,7 +915,7 @@ df["_outlier"] = outlier_flags["outlier_consenso"]
 """)
 
 # ─────────────────────────────────────────────────────────────────────────────
-md("## 📄 Seção 8 — Relatório HTML Automático")
+md("## Seção 8 — Relatório HTML Automático")
 md("""> **Diferencial:** Geração automática de relatório com **narrativa interpretativa** — não apenas tabelas, mas frases que explicam os achados.""")
 
 code("""
@@ -995,7 +995,7 @@ html = f\"\"\"<!DOCTYPE html>
 <body>
 
 <div class="header">
-  <h1>📊 Relatório de Análise Exploratória de Dados</h1>
+  <h1>Relatório de Análise Exploratória de Dados</h1>
   <p>Gerado em {datetime.now().strftime('%d/%m/%Y às %H:%M')} · Template EDA Profissional · Autor: Miguel Salles Reis</p>
 </div>
 
@@ -1076,7 +1076,7 @@ display(IHTML(f'<a href="{report_path}" target="_blank">🔗 Abrir Relatório HT
 
 # ─────────────────────────────────────────────────────────────────────────────
 md("""---
-## ✅ Próximos Passos
+## Próximos Passos
 
 Após executar este template, você terá na pasta `outputs/`:
 
@@ -1117,7 +1117,7 @@ notebook = {
     "cells": cells
 }
 
-output_path = "/mnt/user-data/outputs/eda_template_profissional.ipynb"
+output_path = "eda_template_profissional.ipynb"
 with open(output_path, "w", encoding="utf-8") as f:
     json.dump(notebook, f, ensure_ascii=False, indent=2)
 
