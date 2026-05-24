@@ -1,4 +1,4 @@
-# 🔍 Template EDA Profissional
+# Template EDA Profissional
 
 > Análise Exploratória de Dados com rigor estatístico — do CSV bruto ao relatório HTML em minutos.
 
