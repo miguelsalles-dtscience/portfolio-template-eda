@@ -2,7 +2,7 @@
 
 > Análise Exploratória de Dados com rigor estatístico — do CSV bruto ao relatório HTML em minutos.
 
-**Autor:** Miguel Salles Reis · [github.com/MSallesR](https://github.com/MSallesR)
+**Autor:** Miguel Salles Reis · [github.com/miguelsalles-dtscience](https://github.com/miguelsalles-dtscience)
 
 ---
 
@@ -97,4 +97,4 @@ Uso pessoal e comercial permitido. Redistribuição ou revenda do template origi
 
 ---
 
-*Template EDA Profissional · Miguel Salles Reis · [github.com/MSallesR](https://github.com/MSallesR)*
+*Template EDA Profissional · Miguel Salles Reis · [github.com/miguelsalles-dtscience](https://github.com/miguelsalles-dtscience)*
